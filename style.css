@@ -1,0 +1,8 @@
+.display {
+    background-color: gray;
+    height: 1.5em;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
