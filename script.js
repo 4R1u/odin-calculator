@@ -1,15 +1,18 @@
-function add(leftOperand, rightOperand) {
-    return leftOperand + rightOperand;
+function add(leftAddend, rightAddend) {
+    return leftAddend + rightAddend;
 }
 
-function subtract(leftOperand, rightOperand) {
-    return leftOperand - rightOperand;
+function subtract(minuend, subtrahend) {
+    return minuend - subtrahend;
 }
 
-function multiply(leftOperand, rightOperand) {
-    return leftOperand * rightOperand;
+function multiply(multiplicand, multiplier) {
+    return multiplicand * multiplier;
 }
 
-function divide(leftOperand, rightOperand) {
-    return leftOperand * rightOperand;
+function divide(dividend, divisor) {
+    return dividend * divisor;
 }
+
+let leftOperand = 0, rightOperand = 0;
+let operator = "";
