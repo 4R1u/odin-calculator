@@ -6,3 +6,19 @@
     align-items: center;
     padding: 5px;
 }
+
+.buttons {
+    width: 150px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+button {
+    height: 45px;
+    width: 45px;
+}
+
