@@ -41,3 +41,19 @@ button {
     justify-content: space-between;
     align-content: space-around;
 }
+
+.button-7 {
+    border-top-left-radius: 15px;
+}
+
+.button-clear {
+    border-top-right-radius: 15px;
+}
+
+.button-equals {
+    border-bottom-right-radius: 15px;
+}
+
+.button-0 {
+    border-bottom-left-radius: 15px;
+}
