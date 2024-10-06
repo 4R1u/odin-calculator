@@ -1,19 +1,17 @@
 .display {
     background-color: gray;
     height: 1.5em;
-    width: 150px;
+    width: 250px;
     display: flex;
     align-items: center;
     padding: 5px;
 }
 
 .buttons {
-    width: 160px;
-    height: 320px;
+    width: 260px;
+    height: 200px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-around;
 }
 
 button {
@@ -24,5 +22,20 @@ button {
 .calculator {
     background-color: #212227;
     padding: 10px;
-    width: 160px;
+    width: 400px;
+}
+
+.num-buttons {
+    flex: 0 3 150px;
+}
+
+.op-buttons {
+    flex: 0 2 100px;
+}
+
+.num-buttons, .op-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
 }
