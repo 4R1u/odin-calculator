@@ -8,13 +8,12 @@
 }
 
 .buttons {
-    width: 150px;
+    width: 160px;
     height: 300px;
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
     justify-content: space-between;
-    align-content: space-between;
+    align-content: space-around;
 }
 
 button {
@@ -22,3 +21,8 @@ button {
     width: 45px;
 }
 
+.calculator {
+    background-color: #212227;
+    padding: 10px;
+    width: 160px;
+}
