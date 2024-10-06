@@ -57,3 +57,8 @@ button {
 .button-0 {
     border-bottom-left-radius: 15px;
 }
+
+.button-del, .button-clear {
+    background-color: #3535d4;
+    color: #d4e1ff;
+}
