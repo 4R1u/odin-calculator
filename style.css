@@ -28,6 +28,7 @@ button {
 
 .num-buttons {
     flex: 0 3 150px;
+    flex-direction: row-reverse;
 }
 
 .op-buttons {
