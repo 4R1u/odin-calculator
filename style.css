@@ -1,10 +1,14 @@
 .display {
     background-color: gray;
-    height: 1.5em;
+    height: 3em;
     width: 250px;
     display: flex;
     align-items: center;
     padding: 5px;
+    background-color: #dae6d2;
+    color: #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .buttons {
@@ -24,6 +28,7 @@ button {
     background-color: #212227;
     padding: 10px;
     width: 260px;
+    border-radius: 10px;
 }
 
 .num-buttons {
