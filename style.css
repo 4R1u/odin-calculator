@@ -38,6 +38,7 @@ button {
     width: 90px;
     background-color: #e9eae2;
     font-size: 2rem;
+    border-width: 2em;
 }
 
 .calculator {
