@@ -1,5 +1,6 @@
 body{
     font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,16 +10,16 @@ body{
 
 .display {
     background-color: gray;
-    height: 3em;
-    width: 250px;
+    height: 6em;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 5px;
+    padding: 10px;
     background-color: #dae6d2;
     color: #000000;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .input, .result {
@@ -26,32 +27,33 @@ body{
 }
 
 .buttons {
-    width: 260px;
-    height: 200px;
+    width: 520px;
+    height: 400px;
     display: flex;
     justify-content: space-between;
 }
 
 button {
-    height: 45px;
-    width: 45px;
+    height: 90px;
+    width: 90px;
     background-color: #e9eae2;
+    font-size: 2rem;
 }
 
 .calculator {
     background-color: #212227;
-    padding: 10px;
-    width: 260px;
-    border-radius: 10px;
+    padding: 20px;
+    width: 520px;
+    border-radius: 20px;
 }
 
 .num-buttons {
-    flex: 0 3 150px;
+    flex: 0 3 300px;
     flex-direction: row-reverse;
 }
 
 .op-buttons {
-    flex: 0 2 100px;
+    flex: 0 2 200px;
 }
 
 .num-buttons, .op-buttons {
@@ -62,19 +64,19 @@ button {
 }
 
 .button-7 {
-    border-top-left-radius: 15px;
+    border-top-left-radius: 30px;
 }
 
 .button-clear {
-    border-top-right-radius: 15px;
+    border-top-right-radius: 30px;
 }
 
 .button-equals {
-    border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 30px;
 }
 
 .button-0 {
-    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 30px;
 }
 
 .button-del, .button-clear {
