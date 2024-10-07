@@ -1,5 +1,10 @@
 body{
     font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
 }
 
 .display {
@@ -14,6 +19,10 @@ body{
     color: #000000;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+
+.input, .result {
+    text-align: right;
 }
 
 .buttons {
