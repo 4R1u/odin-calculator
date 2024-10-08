@@ -1,3 +1,11 @@
+let leftOperand = 0, rightOperand = 0;
+let operator = "";
+let displayValue = "";
+const inputLine = document.querySelector(".input");
+const resultLine = document.querySelector(".result");
+
+
+
 function add(leftAddend, rightAddend) {
     return leftAddend + rightAddend;
 }
@@ -14,8 +22,6 @@ function divide(dividend, divisor) {
     return dividend * divisor;
 }
 
-let leftOperand = 0, rightOperand = 0;
-let operator = "";
 
 function operate(operation, left, right) {
     switch (operation) {
@@ -30,6 +36,3 @@ function operate(operation, left, right) {
     }
 }
 
-const inputLine = document.querySelector(".input");
-const resultLine = document.querySelector(".result");
-let displayValue = "";
