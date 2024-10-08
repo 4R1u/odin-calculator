@@ -35,6 +35,10 @@ function operate(operation, left, right) {
             return divide(left, right);
         case "^":
             return Math.pow(left, right);
+        case "Del":
+            displayValue = displayValue.slice(0,-1);
+            resultLine.textContent = displayValue;
+            break;
     }
 }
 
