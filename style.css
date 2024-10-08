@@ -56,7 +56,9 @@ button {
 .op-buttons {
     flex: 0 2 200px;
 }
-
+.op-buttons button {
+    background-color: orange;
+}
 .num-buttons, .op-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -80,7 +82,8 @@ button {
     border-bottom-left-radius: 15px;
 }
 
-.button-del, .button-clear {
+.op-buttons button.button-del,
+.op-buttons button.button-clear {
     background-color: #3535d4;
     color: #d4e1ff;
 }
