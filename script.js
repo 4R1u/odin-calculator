@@ -37,7 +37,13 @@ function operate(operation, left, right) {
 }
 
 function appendNum(num) {
-    displayValue += num;
+    if (num == "." && displayValue.includes(".")) {return;}
+    else if (num == "Ans") {
+        displayValue = ans;
+    }
+    else {
+        displayValue += num;
+    }
     resultLine.textContent = displayValue;
 }
 
