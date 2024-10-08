@@ -40,3 +40,10 @@ function appendNum(num) {
     displayValue += num;
     resultLine.textContent = displayValue;
 }
+
+const buttons = document.querySelectorAll(".num-buttons button")
+.forEach((button) => {
+    button.addEventListener("click", () => {
+        appendNum(button.textContent);
+    }
+)});
