@@ -3,7 +3,7 @@ let operator = "";
 let displayValue = "";
 const inputLine = document.querySelector(".input");
 const resultLine = document.querySelector(".result");
-
+let ans = 0;
 
 
 function add(leftAddend, rightAddend) {
