@@ -39,6 +39,11 @@ function operate(operation, left, right) {
             displayValue = displayValue.slice(0,-1);
             resultLine.textContent = displayValue;
             break;
+        case "Clear":
+            displayValue = "";
+            resultLine.textContent = "";
+            inputLine.textContent = "";
+            break;
     }
 }
 
