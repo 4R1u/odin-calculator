@@ -32,4 +32,4 @@ function operate(operation, left, right) {
 
 const inputLine = document.querySelector(".input");
 const resultLine = document.querySelector(".result");
-
+let displayValue = "";
