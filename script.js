@@ -36,3 +36,7 @@ function operate(operation, left, right) {
     }
 }
 
+function appendNum(num) {
+    displayValue += num;
+    resultLine.textContent = displayValue;
+}
