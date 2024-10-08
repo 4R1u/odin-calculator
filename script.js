@@ -29,3 +29,7 @@ function operate(operation, left, right) {
             return divide(left, right);
     }
 }
+
+const inputLine = document.querySelector(".input");
+const resultLine = document.querySelector(".result");
+
