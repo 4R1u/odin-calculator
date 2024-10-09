@@ -72,6 +72,9 @@ document.querySelector(".button-clear")
 
 document.querySelector(".button-multiply")
 .addEventListener("click", () => {
-    inputLine.textContent = leftOperand = `${displayValue}*`;
+    leftOperand = inputLine.textContent
+    ? displayValue * leftOperand
+    : (displayValue || 0);
+    inputLine.textContent = `${leftOperand}*`;
     displayValue = resultLine.textContent = "";
 });
