@@ -73,7 +73,7 @@ document.querySelector(".button-clear")
 document.querySelector(".button-multiply")
 .addEventListener("click", () => {
     leftOperand = inputLine.textContent
-    ? displayValue * leftOperand
+    ? leftOperand * displayValue
     : (displayValue || 0);
     inputLine.textContent = `${leftOperand}*`;
     displayValue = resultLine.textContent = "";
@@ -82,7 +82,7 @@ document.querySelector(".button-multiply")
 document.querySelector(".button-divide")
 .addEventListener("click", () => {
     leftOperand = inputLine.textContent
-    ? displayValue / leftOperand
+    ? leftOperand / displayValue
     : (displayValue || 0);
     inputLine.textContent = `${leftOperand}/`;
     displayValue = resultLine.textContent = "";
