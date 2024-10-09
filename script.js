@@ -69,3 +69,9 @@ document.querySelector(".button-clear")
     inputLine.textContent = "";
     ans = leftOperand = rightOperand = "";
 });
+
+document.querySelector(".button-multiply")
+.addEventListener("click", () => {
+    inputLine.textContent = leftOperand = `${displayValue}*`;
+    displayValue = resultLine.textContent = "";
+});
