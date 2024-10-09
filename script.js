@@ -50,6 +50,11 @@ function appendNum(num) {
 }
 
 function operatorButtonCallback(operation) {
+    if (!resultLine.textContent) {
+        operator = operation;
+        inputLine.textContent = `${leftOperand}${operation}`;
+        return;
+    }
     leftOperand = inputLine.textContent
     ? `${operate(operator, +leftOperand, +displayValue)}`
     : (displayValue || 0);
