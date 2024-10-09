@@ -49,6 +49,16 @@ function appendNum(num) {
     resultLine.textContent = displayValue;
 }
 
+function operatorButtonCallback(operation) {
+    leftOperand = inputLine.textContent
+    ? `${operate(operator, +leftOperand, +displayValue)}`
+    : (displayValue || 0);
+    operator = operation;
+    inputLine.textContent = `${leftOperand}${operation}`;
+    displayValue = resultLine.textContent = "";    
+}
+
+
 document.querySelectorAll(".num-buttons button")
 .forEach((button) => {
     button.addEventListener("click", () => {
@@ -71,19 +81,16 @@ document.querySelector(".button-clear")
 });
 
 document.querySelector(".button-multiply")
-.addEventListener("click", () => {
-    leftOperand = inputLine.textContent
-    ? leftOperand * displayValue
-    : (displayValue || 0);
-    inputLine.textContent = `${leftOperand}*`;
-    displayValue = resultLine.textContent = "";
-});
+.addEventListener("click", () => {operatorButtonCallback("*")});
 
 document.querySelector(".button-divide")
-.addEventListener("click", () => {
-    leftOperand = inputLine.textContent
-    ? leftOperand / displayValue
-    : (displayValue || 0);
-    inputLine.textContent = `${leftOperand}/`;
-    displayValue = resultLine.textContent = "";
-});
+.addEventListener("click", () => {operatorButtonCallback("/")});
+
+document.querySelector(".button-add")
+.addEventListener("click", () => {operatorButtonCallback("+")});
+
+document.querySelector(".button-subtract")
+.addEventListener("click", () => {operatorButtonCallback("-")});
+
+document.querySelector(".button-power")
+.addEventListener("click", () => {operatorButtonCallback("^")});
