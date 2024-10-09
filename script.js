@@ -35,15 +35,6 @@ function operate(operation, left, right) {
             return divide(left, right);
         case "^":
             return Math.pow(left, right);
-        case "Del":
-            displayValue = displayValue.slice(0,-1);
-            resultLine.textContent = displayValue;
-            break;
-        case "Clear":
-            displayValue = "";
-            resultLine.textContent = "";
-            inputLine.textContent = "";
-            break;
     }
 }
 
@@ -58,9 +49,23 @@ function appendNum(num) {
     resultLine.textContent = displayValue;
 }
 
-const buttons = document.querySelectorAll(".num-buttons button")
+document.querySelectorAll(".num-buttons button")
 .forEach((button) => {
     button.addEventListener("click", () => {
         appendNum(button.textContent);
     }
 )});
+
+document.querySelector(".button-del")
+.addEventListener("click", () => {
+    displayValue = displayValue.slice(0,-1);
+    resultLine.textContent = displayValue;
+});
+
+document.querySelector(".button-clear")
+.addEventListener("click", () => {
+    displayValue = "";
+    resultLine.textContent = "";
+    inputLine.textContent = "";
+    ans = leftOperand = rightOperand = "";
+});
