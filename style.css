@@ -80,7 +80,17 @@ button {
     border-bottom-left-radius: 15px;
 }
 
-.button-del, .button-clear {
+.op-buttons button {
+    background-color: orange;
+}
+
+.op-buttons button.button-equals {
+    background-color: #191e21;
+    color: #cad0cc;
+}
+
+.op-buttons button.button-del,
+.op-buttons button.button-clear {
     background-color: #3535d4;
     color: #d4e1ff;
 }
