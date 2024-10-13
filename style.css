@@ -9,7 +9,7 @@ body{
 
 .display {
     background-color: gray;
-    font-size: 2em;
+    font-size: 3em;
     height: 3em;
     width: 500px;
     display: flex;
