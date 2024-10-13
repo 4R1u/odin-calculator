@@ -22,7 +22,7 @@ body{
     margin-bottom: 20px;
 }
 
-.input, .result {
+.upper-display, .lower-display {
     text-align: right;
 }
 
