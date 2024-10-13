@@ -9,8 +9,7 @@ body{
 
 .display {
     background-color: gray;
-    font-size: 3em;
-    height: 3em;
+    height: 8em;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -22,7 +21,12 @@ body{
     margin-bottom: 20px;
 }
 
-.upper-display, .lower-display {
+.upper-display {
+    font-size: 2em;
+}
+
+.lower-display {
+    font-size: 4em;
     text-align: right;
 }
 
