@@ -35,3 +35,11 @@ function operate(operation, left, right) {
     }
 }
 
+function numberButtonPress(number) {
+    if (clearInput) {
+        lowerLine.textContent = leftOperand = "";
+        clearInput = false;
+    }
+    lowerLine.textContent += number;
+    leftOperand += number;
+}
