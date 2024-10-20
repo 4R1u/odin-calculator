@@ -29,3 +29,5 @@ function operate(operation, left, right) {
             return divide(left, right);
     }
 }
+
+let clearInput = false;
