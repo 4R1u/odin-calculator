@@ -41,6 +41,20 @@ function numberButtonPress(number) {
         lowerLine.textContent = leftOperand = "";
         clearInput = false;
     }
+    if (number == "Ans") {
+        lowerLine.textContent = leftOperand = result;
+        return;
+    }
+    else if (number == ".") {
+        if (leftOperand.includes(".")) {
+            return;
+        }
+        else if (leftOperand == "") {
+            lowerLine.textContent += "0";
+            leftOperand += "0";
+        }
+    }
     lowerLine.textContent += number;
     leftOperand += number;
 }
+
