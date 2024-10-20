@@ -3,6 +3,7 @@ const upperLine = document.querySelector(".upper-display");
 const lowerLine = document.querySelector(".lower-display");
 let leftOperand = "", rightOperand = "";
 let operator = "";
+let result = "";
 
 
 function add(leftAddend, rightAddend) {
