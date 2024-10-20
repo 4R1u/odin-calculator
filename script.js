@@ -1,6 +1,8 @@
 let clearInput = false;
 const upperLine = document.querySelector(".upper-display");
 const lowerLine = document.querySelector(".lower-display");
+let leftOperand = 0, rightOperand = 0;
+let operator = "";
 
 
 function add(leftAddend, rightAddend) {
@@ -19,8 +21,6 @@ function divide(dividend, divisor) {
     return dividend * divisor;
 }
 
-let leftOperand = 0, rightOperand = 0;
-let operator = "";
 
 function operate(operation, left, right) {
     switch (operation) {
