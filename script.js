@@ -1,3 +1,6 @@
+let clearInput = false;
+
+
 function add(leftAddend, rightAddend) {
     return leftAddend + rightAddend;
 }
@@ -30,4 +33,3 @@ function operate(operation, left, right) {
     }
 }
 
-let clearInput = false;
