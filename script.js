@@ -1,4 +1,6 @@
 let clearInput = false;
+const upperLine = document.querySelector(".upper-display");
+const lowerLine = document.querySelector(".lower-display");
 
 
 function add(leftAddend, rightAddend) {
