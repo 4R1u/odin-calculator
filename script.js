@@ -38,24 +38,24 @@ function operate(operation, left, right) {
 
 function numberButtonPress(number) {
     if (clearInput) {
-        lowerLine.textContent = leftOperand = "";
+        lowerLine.textContent = rightOperand = "";
         clearInput = false;
     }
     if (number == "Ans") {
-        lowerLine.textContent = leftOperand = result;
+        lowerLine.textContent = rightOperand = result;
         return;
     }
     else if (number == ".") {
-        if (leftOperand.includes(".")) {
+        if (rightOperand.includes(".")) {
             return;
         }
-        else if (leftOperand == "") {
+        else if (rightOperand == "") {
             lowerLine.textContent += "0";
-            leftOperand += "0";
+            rightOperand += "0";
         }
     }
     lowerLine.textContent += number;
-    leftOperand += number;
+    rightOperand += number;
 }
 
 document.querySelectorAll(".num-buttons button")
