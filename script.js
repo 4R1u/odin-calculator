@@ -64,3 +64,12 @@ document.querySelectorAll(".num-buttons button")
         numberButtonPress(button.textContent);
     });
 });
+
+function evaluateCurrentExpression() {
+    if (operator) {
+        return operate(operator, +leftOperand, +rightOperand);
+    }
+    else {
+        return rightOperand;
+    }
+}
