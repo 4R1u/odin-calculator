@@ -58,3 +58,9 @@ function numberButtonPress(number) {
     leftOperand += number;
 }
 
+document.querySelectorAll(".num-buttons button")
+.forEach((button) => {
+    button.addEventListener("click", () => {
+        numberButtonPress(button.textContent);
+    });
+});
