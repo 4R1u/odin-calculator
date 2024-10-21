@@ -19,7 +19,7 @@ function multiply(multiplicand, multiplier) {
 }
 
 function divide(dividend, divisor) {
-    return dividend * divisor;
+    return dividend / divisor;
 }
 
 
