@@ -33,6 +33,8 @@ function operate(operation, left, right) {
             return multiply(left, right);
         case "/":
             return divide(left, right);
+        case "^":
+            return Math.pow(left, right);
     }
 }
 
