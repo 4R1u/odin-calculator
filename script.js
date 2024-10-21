@@ -73,3 +73,19 @@ function evaluateCurrentExpression() {
         return rightOperand;
     }
 }
+
+function operatorButtonPress(pressedOperator) {
+    if (clearInput) {
+        operator = pressedOperator;
+        upperLine.textContent = `${leftOperand}${operator}`;
+    }
+    else {
+        result = evaluateCurrentExpression();
+        operator = pressedOperator;
+        upperLine.textContent = `${result}${operator}`;
+        leftOperand = rightOperand =
+        lowerLine.textContent =
+        result;
+        clearInput = true;
+    }
+}
