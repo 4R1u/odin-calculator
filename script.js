@@ -77,6 +77,11 @@ function evaluateCurrentExpression() {
 }
 
 function operatorButtonPress(pressedOperator) {
+    if (pressedOperator == "Del") {
+        rightOperand = rightOperand.slice(0, -1);
+        lowerLine.textContent = rightOperand;
+        return;
+    }
     if (clearInput) {
         operator = pressedOperator;
         upperLine.textContent = `${leftOperand}${operator}`;
