@@ -40,6 +40,9 @@ function operate(operation, left, right) {
 
 function numberButtonPress(number) {
     if (clearInput) {
+        if (number == "0" && lowerLine.textContent == "0") {
+            return;
+        }
         lowerLine.textContent = rightOperand = "";
         clearInput = false;
     }
