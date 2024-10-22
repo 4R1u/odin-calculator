@@ -86,7 +86,8 @@ function operatorButtonPress(pressedOperator) {
         leftOperand = rightOperand =
         upperLine.textContent =
         lowerLine.textContent = 
-        operator = "";
+        operator = result = 
+        "";
         clearInput = false;
         return;
     }
