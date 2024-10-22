@@ -112,3 +112,10 @@ function operatorButtonPress(pressedOperator) {
         clearInput = true;
     }
 }
+
+document.querySelectorAll(".op-buttons button")
+.forEach((button) => {
+    button.addEventListener("click", () => {
+        operatorButtonPress(button.textContent);
+    });
+});
