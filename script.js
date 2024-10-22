@@ -3,7 +3,7 @@ const upperLine = document.querySelector(".upper-display");
 const lowerLine = document.querySelector(".lower-display");
 let leftOperand = "", rightOperand = "";
 let operator = "";
-let result = "";
+let result = "0";
 
 
 function add(leftAddend, rightAddend) {
@@ -95,8 +95,9 @@ function operatorButtonPress(pressedOperator) {
     else if (pressedOperator == "Clear") {
         leftOperand =
         upperLine.textContent =
-        operator = result = 
+        operator =
         "";
+        result = 0;
         rightOperand =
         clearInput = true;
         lowerLine.textContent = 0;
