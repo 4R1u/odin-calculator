@@ -1,4 +1,4 @@
-let clearInput = false;
+let clearInput = true;
 const upperLine = document.querySelector(".upper-display");
 const lowerLine = document.querySelector(".lower-display");
 let leftOperand = "", rightOperand = "";
@@ -98,7 +98,7 @@ function operatorButtonPress(pressedOperator) {
         operator = result = 
         "";
         rightOperand =
-        clearInput = false;
+        clearInput = true;
         lowerLine.textContent = 0;
         return;
     }
