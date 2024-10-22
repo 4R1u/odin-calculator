@@ -89,8 +89,9 @@ function operatorButtonPress(pressedOperator) {
             return;
         }
         rightOperand = rightOperand.slice(0, -1);
-        if (rightOperand == "") {
+        if (rightOperand == "" || rightOperand == "0") {
             rightOperand = "0";
+            clearInput = true;
         }
         lowerLine.textContent = rightOperand;
         return;
