@@ -86,16 +86,20 @@ function operatorButtonPress(pressedOperator) {
             return;
         }
         rightOperand = rightOperand.slice(0, -1);
+        if (rightOperand == "") {
+            rightOperand = "0";
+        }
         lowerLine.textContent = rightOperand;
         return;
     }
     else if (pressedOperator == "Clear") {
-        leftOperand = rightOperand =
+        leftOperand =
         upperLine.textContent =
-        lowerLine.textContent = 
         operator = result = 
         "";
+        rightOperand =
         clearInput = false;
+        lowerLine.textContent = 0;
         return;
     }
     else if (pressedOperator == "=") {
