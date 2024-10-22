@@ -1,7 +1,7 @@
 let clearInput = true;
 const upperLine = document.querySelector(".upper-display");
 const lowerLine = document.querySelector(".lower-display");
-let leftOperand = "", rightOperand = "";
+let leftOperand = "", rightOperand = "0";
 let operator = "";
 let result = "0";
 
