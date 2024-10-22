@@ -90,6 +90,13 @@ function operatorButtonPress(pressedOperator) {
         clearInput = false;
         return;
     }
+    else if (pressedOperator == "=") {
+        lowerLine.textContent = result = evaluateCurrentExpression();
+        upperLine.textContent = `${leftOperand}${operator}${rightOperand}`;
+        clearInput = true;
+        leftOperand = `${result}`;
+        return;
+    }
     if (clearInput) {
         operator = pressedOperator;
         upperLine.textContent = `${leftOperand}${operator}`;
