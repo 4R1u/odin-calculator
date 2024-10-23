@@ -44,7 +44,7 @@ function numberButtonPress(number) {
             return;
         }
         if (upperLine.textContent.includes(`${operator}${rightOperand}`)) {
-            upperLine.textContent = leftOperand = operator = result = "";
+            upperLine.textContent = leftOperand = operator = "";
         }
         lowerLine.textContent = rightOperand = "";
         clearInput = false;
