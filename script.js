@@ -50,9 +50,7 @@ function numberButtonPress(number) {
         clearInput = false;
     }
     if (number == "Ans") {
-        lowerLine.textContent = rightOperand = result;
-        clearInput = true;
-        return;
+        number = result;
     }
     else if (number == ".") {
         if (rightOperand.includes(".")) {
@@ -113,7 +111,7 @@ function operatorButtonPress(pressedOperator) {
     }
     else if (pressedOperator == "=") {
         lowerLine.textContent = result = evaluateCurrentExpression();
-        upperLine.textContent = `${leftOperand}${operator}${rightOperand}`;
+        upperLine.textContent = `${leftOperand}${operator}${rightOperand}=`;
         clearInput = true;
         leftOperand = `${result}`;
         return;
