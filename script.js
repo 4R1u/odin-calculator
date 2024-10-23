@@ -51,6 +51,9 @@ function numberButtonPress(number) {
     }
     if (number == "Ans") {
         number = result;
+        if (result == "0") {
+            clearInput = true;
+        }
     }
     else if (number == ".") {
         if (rightOperand.includes(".")) {
