@@ -48,6 +48,7 @@ function numberButtonPress(number) {
     }
     if (number == "Ans") {
         lowerLine.textContent = rightOperand = result;
+        clearInput = true;
         return;
     }
     else if (number == ".") {
