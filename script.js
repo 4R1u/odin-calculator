@@ -80,6 +80,7 @@ function evaluateCurrentExpression() {
         return operate(operator, +leftOperand, +rightOperand);
     }
     else {
+        leftOperand = "";
         return rightOperand;
     }
 }
