@@ -125,7 +125,8 @@ function operatorButtonPress(pressedOperator) {
     }
     if (clearInput) {
         operator = pressedOperator;
-        upperLine.textContent = `${leftOperand || lowerLine.textContent}${operator}`;
+        upperLine.textContent = `${lowerLine.textContent}${operator}`;
+        leftOperand = lowerLine.textContent;
     }
     else {
         result = evaluateCurrentExpression();
