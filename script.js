@@ -80,11 +80,19 @@ document.querySelectorAll(".num-buttons button")
 
 function evaluateCurrentExpression() {
     if (operator) {
-        return operate(operator, +leftOperand, +rightOperand);
+        let output = operate(operator, +leftOperand, +rightOperand);
+        if (output > Math.pow(10, 10)) {
+            output = output.toExponential(6);
+        }
+        return output;
     }
     else {
         leftOperand = "";
-        return rightOperand;
+        let output = rightOperand;
+        if (output > Math.pow(10, 10)) {
+            output = output.toExponential(6);
+        }
+        return output;
     }
 }
 
