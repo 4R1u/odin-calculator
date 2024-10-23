@@ -39,7 +39,7 @@ function operate(operation, left, right) {
 }
 
 function numberButtonPress(number) {
-    if (rightOperand.length > 10) {
+    if (rightOperand.length > 10 && clearInput) {
         return;
     }
     if (clearInput) {
