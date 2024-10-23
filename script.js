@@ -39,6 +39,9 @@ function operate(operation, left, right) {
 }
 
 function numberButtonPress(number) {
+    if (rightOperand.length > 10) {
+        return;
+    }
     if (clearInput) {
         if (number == "0" && lowerLine.textContent == "0") {
             return;
