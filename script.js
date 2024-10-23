@@ -125,6 +125,10 @@ function operatorButtonPress(pressedOperator) {
         return;
     }
     else if (pressedOperator == "=") {
+        if (lowerLine.textContent == "0" && operator == "/") {
+            alert("Cookie Monster");
+            return;
+        }
         lowerLine.textContent = result = evaluateCurrentExpression();
         upperLine.textContent = `${leftOperand}${operator}${rightOperand}=`;
         clearInput = true;
@@ -137,6 +141,10 @@ function operatorButtonPress(pressedOperator) {
         leftOperand = lowerLine.textContent;
     }
     else {
+        if (lowerLine.textContent == "0" && operator == "/") {
+            alert("Cookie Monster");
+            return;
+        }
         result = evaluateCurrentExpression();
         operator = pressedOperator;
         upperLine.textContent = `${result}${operator}`;
