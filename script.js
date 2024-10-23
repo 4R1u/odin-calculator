@@ -39,7 +39,7 @@ function operate(operation, left, right) {
 }
 
 function numberButtonPress(number) {
-    if (rightOperand.length > 10 && clearInput) {
+    if (rightOperand.length > 10 && !clearInput) {
         return;
     }
     if (clearInput) {
@@ -88,7 +88,7 @@ function evaluateCurrentExpression() {
     }
     else {
         leftOperand = "";
-        let output = rightOperand;
+        let output = +rightOperand;
         if (output > Math.pow(10, 10)) {
             output = output.toExponential(6);
         }
