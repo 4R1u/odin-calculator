@@ -43,7 +43,7 @@ function numberButtonPress(number) {
         if (number == "0" && lowerLine.textContent == "0") {
             return;
         }
-        if (upperLine.textContent.includes(`${operator}${rightOperand}`)) {
+        if (upperLine.textContent.includes(`=`)) {
             upperLine.textContent = leftOperand = operator = "";
         }
         lowerLine.textContent = rightOperand = "";
