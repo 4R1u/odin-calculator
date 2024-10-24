@@ -166,7 +166,7 @@ document.querySelectorAll(".op-buttons button")
     });
 });
 
-document.addEventListener("keypress", (e) => {
+document.addEventListener("keydown", (e) => {
     switch (e.key) {
         case "0":
             numberButtonPress("0");
