@@ -161,3 +161,69 @@ document.querySelectorAll(".op-buttons button")
         operatorButtonPress(button.textContent);
     });
 });
+
+document.addEventListener("keypress", (e) => {
+    switch (e.key) {
+        case "0":
+            numberButtonPress("0");
+            break;
+        case "1":
+            numberButtonPress("1");
+            break;
+        case "2":
+            numberButtonPress("2");
+            break;
+        case "3":
+            numberButtonPress("3");
+            break;
+        case "4":
+            numberButtonPress("4");
+            break;
+        case "5":
+            numberButtonPress("5");
+            break;
+        case "6":
+            numberButtonPress("6");
+            break;
+        case "7":
+            numberButtonPress("7");
+            break;
+        case "8":
+            numberButtonPress("8");
+            break;
+        case ".":
+            numberButtonPress(".");
+            break;
+        case "_":
+            numberButtonPress("Ans");
+            break;
+
+        case "Backspace":
+            operatorButtonPress("Del");
+            break;
+        case "Escape":
+            operatorButtonPress("Clear");
+            break;
+        case "*":
+            operatorButtonPress("*");
+            break;
+        case "/":
+            operatorButtonPress("/");
+            break;
+        case "+":
+            operatorButtonPress("+");
+            break;
+        case "-":
+            operatorButtonPress("-");
+            break;
+        case "^":
+            operatorButtonPress("^");
+            break;
+        case "=":
+            operatorButtonPress("=");
+            break;
+        case "Enter":
+            operatorButtonPress("=");
+            break;
+        }
+});
