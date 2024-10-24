@@ -195,6 +195,9 @@ document.addEventListener("keypress", (e) => {
         case "8":
             numberButtonPress("8");
             break;
+        case "9":
+            numberButtonPress("9");
+            break;
         case ".":
             numberButtonPress(".");
             break;
