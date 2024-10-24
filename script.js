@@ -38,6 +38,24 @@ function operate(operation, left, right) {
     }
 }
 
+function evaluateCurrentExpression() {
+    if (operator) {
+        let output = operate(operator, +leftOperand, +rightOperand);
+        if (output > Math.pow(10, 10)) {
+            output = output.toExponential(6);
+        }
+        return output;
+    }
+    else {
+        leftOperand = "";
+        let output = +rightOperand;
+        if (output > Math.pow(10, 10)) {
+            output = output.toExponential(6);
+        }
+        return output;
+    }
+}
+
 function numberButtonPress(number) {
     if (rightOperand.length > 10 && !clearInput) {
         return;
@@ -69,31 +87,6 @@ function numberButtonPress(number) {
     }
     lowerLine.textContent += number;
     rightOperand += number;
-}
-
-document.querySelectorAll(".num-buttons button")
-.forEach((button) => {
-    button.addEventListener("click", () => {
-        numberButtonPress(button.textContent);
-    });
-});
-
-function evaluateCurrentExpression() {
-    if (operator) {
-        let output = operate(operator, +leftOperand, +rightOperand);
-        if (output > Math.pow(10, 10)) {
-            output = output.toExponential(6);
-        }
-        return output;
-    }
-    else {
-        leftOperand = "";
-        let output = +rightOperand;
-        if (output > Math.pow(10, 10)) {
-            output = output.toExponential(6);
-        }
-        return output;
-    }
 }
 
 function operatorButtonPress(pressedOperator) {
@@ -154,6 +147,17 @@ function operatorButtonPress(pressedOperator) {
         clearInput = true;
     }
 }
+
+
+
+
+
+document.querySelectorAll(".num-buttons button")
+.forEach((button) => {
+    button.addEventListener("click", () => {
+        numberButtonPress(button.textContent);
+    });
+});
 
 document.querySelectorAll(".op-buttons button")
 .forEach((button) => {
