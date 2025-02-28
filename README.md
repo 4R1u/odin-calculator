@@ -1,5 +1,5 @@
 # Calculator
-Buggy calculator that aims to behave like the Windows calculator.
+Simple calculator that aims to behave like the Windows calculator.
 
 Divide zero by zero to see a cool surprise feature.
 
